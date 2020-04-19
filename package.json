@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/muratbyazrov/Mesto_from_yandex_praktikum/issues"
   },
-  "homepage": "https://github.com/muratbyazrov/Mesto_from_yandex_praktikum#readme",
+
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
