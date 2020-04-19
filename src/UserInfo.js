@@ -1,4 +1,6 @@
-class UserInfo{
+import {UserName, UserJob, UserPhoto, UserNameForm, UserJobForm} from './index'
+
+export class UserInfo{
     constructor(form){
         this.form = form;
     }
@@ -15,3 +17,4 @@ class UserInfo{
             UserJobForm.value = UserJob.textContent;
         }
 }
+
