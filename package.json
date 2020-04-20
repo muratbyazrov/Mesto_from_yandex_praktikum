@@ -2,8 +2,8 @@
   "name": "praktikup_sprint11",
   "homepage": "https://muratbyazrov.github.io/Mesto_from_yandex_praktikum/",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "project Mesto from praktikum",
+  "main": "src/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",

@@ -1,4 +1,4 @@
-import {popup} from './index'
+import {popup} from '../index'
 export class Popup {
     constructor(){
        /*  plusButton.addEventListener('click', this.openForm);

@@ -1,4 +1,4 @@
-import {popupUser, userInfo, formValidate} from './index'
+import {popupUser, userInfo, formValidate} from '../index'
 export class PopupUser{
     constructor(){
     }
