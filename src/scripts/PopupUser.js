@@ -1,4 +1,5 @@
-class PopupUser{
+import {popupUser, userInfo, formValidate} from '../index'
+export class PopupUser{
     constructor(){
     }
 //отркыть форму
@@ -17,3 +18,5 @@ class PopupUser{
         };
     }
 }
+
+

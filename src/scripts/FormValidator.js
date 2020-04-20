@@ -1,5 +1,9 @@
-class FormValidator{
-    constructor(){
+import {UserNameForm, placeAddButton, formValidate, UserJobForm, formName, formLink} from '../index'
+export class FormValidator{
+    constructor(UserNameForm, placeAddButton, formValidate){
+      this.UserNameForm = UserNameForm;
+      this.placeAddButton = placeAddButton;
+      this.formValidate = formValidate;
     }
     //Эта функция проверяет валидность всех полей ввода. Поэтому она явлется колбеком для всех слушаетелй элемнтов формы.
     //данная фукция содержит три подфункции. О них ниже:

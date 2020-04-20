@@ -1,5 +1,8 @@
-class Card{
-    constructor(name, link){
+import{placeList, api} from '../index'
+export class Card{
+    constructor(placeList, api){
+        this.placeList = placeList;
+        this.api = api;
     }
     //функция создания карточки. Функция createCard() принимает имя и ссылку и возвращает готовый dom элемент(html)
     createCard(name, link, likesCount, cardId){
@@ -73,4 +76,5 @@ class Card{
             .catch(err => {console.log(`Ошибка: ${err}`)})
     }
 }
+
 

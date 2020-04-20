@@ -1,5 +1,17 @@
+import "./pages/style.css";
+import {Api} from './scripts/Api';
+import {Card} from './scripts/Card';
+import {CardList} from './scripts/CardList';
+import {FormValidator} from './scripts/FormValidator';
+import {ImagePopup} from './scripts/ImagePopup';
+import {Popup} from './scripts/Popup';
+import {PopupUser} from './scripts/PopupUser';
+import {UserInfo} from './scripts/UserInfo';
+
 //ПЕРЕМЕННЫЕ И КОНСТАНТЫ
 //Контейнер с карточками
+
+
 const placeList = document.querySelector('.places-list');
 //Форма новой карточки
 const popup = document.querySelector('.popup');
@@ -28,16 +40,21 @@ const UserPhoto = document.querySelector('.user-info__photo')
 //попап с картинкой
 const imagePopup = document.querySelector('#image-popup')
 
+/* const image = document.querySelector('.popup__image'); */
 
+export {placeList, popup, plusButton, popupClose, form, formName, formLink, placeAddButton, popupUser,
+  editButton,popupUserClose,userForms, UserNameForm, UserJobForm, UserPhotoForm, submit, UserName,
+  UserJob, UserPhoto, imagePopup, userInfo, formValidate, card, cardlist, placepopup, userpopup, imagePopups, api
+}
 //запуск объекиа card
-const card = new Card();
+const card = new Card(placeList, api);
 //Запуск объекта cardlist
 const cardlist = new CardList(placeList, card);
 //Запуск объекта форм
-const placepopup = new Popup();
+const placepopup = new Popup(popup);
 const userpopup = new PopupUser();
 //запуск объекта валидации
-const formValidate = new FormValidator();
+const formValidate = new FormValidator(UserNameForm, placeAddButton, formValidate);
 //запуск объекта редактирования данных пользователя
 const userInfo = new UserInfo(userForms);
 //запуск объекта всплывающей картинки
@@ -162,3 +179,7 @@ editButton.addEventListener('click', formValidate.userFormRender);
  popupUserClose.addEventListener('click', userpopup.closeUserForm);
  //закрыть форму(esc)
  document.addEventListener('keydown', userpopup.closeUserFormEsc);
+
+plusButton.addEventListener('click', placepopup.openForm);
+popupClose.addEventListener('click', placepopup.closeForm)
+document.addEventListener('keydown', placepopup.closeFormEsc);

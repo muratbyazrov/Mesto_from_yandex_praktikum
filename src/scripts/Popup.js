@@ -1,8 +1,10 @@
-class Popup {
+import {popup} from '../index'
+export class Popup {
     constructor(){
-        plusButton.addEventListener('click', this.openForm);
+       /*  plusButton.addEventListener('click', this.openForm);
         popupClose.addEventListener('click', this.closeForm)
-        document.addEventListener('keydown', this.closeFormEsc);
+        document.addEventListener('keydown', this.closeFormEsc); */
+        /* this.popup = popup; */
     }
     //открыть форму
     openForm(){

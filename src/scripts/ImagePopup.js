@@ -1,4 +1,6 @@
-class ImagePopup{
+import {imagePopups, imagePopup} from '../index'
+
+export class ImagePopup{
     constructor(){
     }
     //Эта функция принимает ссылку на картинку в попап и добавляет картинку с помощью присваивания атрибута src
@@ -33,3 +35,4 @@ class ImagePopup{
         imagePopup.classList.remove('popup_is-opened');
     }
 }
+
