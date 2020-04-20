@@ -32,7 +32,7 @@ module.exports = {
             use: [
                 'file-loader?name=./images/[name].[ext]', // указали папку, куда складывать изображения
                 {
-                    loader: 'file-loader',
+                    //loader: 'file-loader',
                     loader: 'image-webpack-loader',
                     options: {
                         bypassOnDebug: true, // webpack@1.x
