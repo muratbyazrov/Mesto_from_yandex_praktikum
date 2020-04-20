@@ -1,4 +1,4 @@
-import {UserName, UserJob, UserPhoto, UserNameForm, UserJobForm} from './index'
+import {UserName, UserJob, UserPhoto, UserNameForm, UserJobForm} from '../index'
 
 export class UserInfo{
     constructor(form){

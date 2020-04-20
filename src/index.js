@@ -1,12 +1,12 @@
 import "./pages/style.css";
-import {Api} from './Api';
-import {Card} from './Card';
-import {CardList} from './CardList';
-import {FormValidator} from './FormValidator';
-import {ImagePopup} from './ImagePopup';
-import {Popup} from './Popup';
-import {PopupUser} from './PopupUser';
-import {UserInfo} from './UserInfo';
+import {Api} from './scripts/Api';
+import {Card} from './scripts/Card';
+import {CardList} from './scripts/CardList';
+import {FormValidator} from './scripts/FormValidator';
+import {ImagePopup} from './scripts/ImagePopup';
+import {Popup} from './scripts/Popup';
+import {PopupUser} from './scripts/PopupUser';
+import {UserInfo} from './scripts/UserInfo';
 
 //ПЕРЕМЕННЫЕ И КОНСТАНТЫ
 //Контейнер с карточками

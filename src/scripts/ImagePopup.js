@@ -1,4 +1,4 @@
-import {imagePopups, imagePopup} from './index'
+import {imagePopups, imagePopup} from '../index'
 
 export class ImagePopup{
     constructor(){

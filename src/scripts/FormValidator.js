@@ -1,4 +1,4 @@
-import {UserNameForm, placeAddButton, formValidate, UserJobForm, formName, formLink} from './index'
+import {UserNameForm, placeAddButton, formValidate, UserJobForm, formName, formLink} from '../index'
 export class FormValidator{
     constructor(UserNameForm, placeAddButton, formValidate){
       this.UserNameForm = UserNameForm;

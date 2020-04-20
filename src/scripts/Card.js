@@ -1,4 +1,4 @@
-import{placeList, api} from './index'
+import{placeList, api} from '../index'
 export class Card{
     constructor(placeList, api){
         this.placeList = placeList;

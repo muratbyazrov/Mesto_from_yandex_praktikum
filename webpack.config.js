@@ -36,7 +36,7 @@ module.exports = {
                     loader: 'image-webpack-loader',
                     options: {
                         bypassOnDebug: true, // webpack@1.x
-                        disable: true, // webpack@2.x and newer
+                        disable: false, // webpack@2.x and newer
                     }
                 },
             ]
@@ -69,6 +69,7 @@ module.exports = {
             template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
             filename: 'index.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
         }),
+        new WebpackMd5Hash(),
         new webpack.DefinePlugin({
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         })
